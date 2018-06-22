@@ -1257,3 +1257,22 @@ header .logo-container {
     transform: scale3d(1.1, 1.1, 1.1);
   }
 }
+
+.tabs{
+	    background: #3498DB;
+    font-size: 18px;
+    border-radius: 4px;
+    color: #fff;
+    padding: 18px 0px;
+    text-align: center;
+    margin: 25px 0px 15px 0px;
+}
+.tabs-small{
+	    background: #3498DB;
+    font-size: 16px;
+    border-radius: 4px;
+    color: #fff;
+    padding: 14px 0px;
+    text-align: center;
+    margin: 25px 0px 15px 0px;
+}
