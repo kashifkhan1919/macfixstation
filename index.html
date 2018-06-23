@@ -854,26 +854,32 @@ Satisfied Customers</h3> </p>
                     <div class="modal-body">
 
                         <!-- *****  Contact form ***** -->
-                        <form class="form">
+                        <form role="form" id="contactForm" data-toggle="validator" class="shake">
                             <div class="row">
                                 <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="first-name" placeholder="First name">
+                                     <input type="text" class="form-control" id="name" placeholder="Enter name" required data-error="Please Enter Name">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="last-name" placeholder="Last name">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input type="email" class="form-control" id="email" placeholder="Email address">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <input type="text" class="form-control" id="project-name" placeholder="Project name">
-                                </div>
-                                <div class="form-group col-md-12 mab-none">
-                                    <textarea rows="6" class="form-control" id="description" placeholder="Your project details and description ..."></textarea>
+                                    <input type="text" class="form-control" id="number" placeholder=" Enter Mobile no.">
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <div class="button bold-text main-bg"><i class="fa fa-paper-plane"></i></div>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
                                 </div>
+                                
+                                <div class="form-group col-md-12 mab-none">
+                                    
+									<textarea id="message" class="form-control" rows="6" placeholder="Enter Description" required></textarea>
+                                </div>
+                                <div class="form-group col-md-12">
+									
+									<button type="submit" id="form-submit" class="button bold-text main-bg"><i class="fa fa-paper-plane"></i></button>
+									
+                                </div>
+								
+								<div class="form-group col-md-12">
+								<div id="msgSubmit" class="h3 text-center hidden"></div>
+								</div>
+								<div class="clearfix"></div>
                             </div>
                         </form>
                     </div> <!-- *** end modal-body *** -->
@@ -942,5 +948,9 @@ Address: 172, Shakti Chambar Samuel Street, Shop 7, Masjid Bunder West, Mumbai 4
     <script src="js/nivo-lightbox.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/main.js"></script>
+
+<script  type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/validator.min.js"></script>
+<script type="text/javascript" src="js/form-scripts.js"></script>
 </body>
 </html>
